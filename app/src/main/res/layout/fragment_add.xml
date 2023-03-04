@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/plantImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/example"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cameraIcon"
+                android:src="@drawable/ic_camera"
+                app:layout_constraintStart_toEndOf="@id/plantImageView"
+                app:layout_constraintTop_toTopOf="@id/plantImageView"
+                android:padding="16dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:id="@+id/cameraIconText"
+                android:text="@string/add_photo"
+                app:layout_constraintStart_toEndOf="@id/cameraIcon"
+                app:layout_constraintTop_toTopOf="@id/cameraIcon"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                style="?attr/textAppearanceBody1"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/plantTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/plant_name"
+                app:counterEnabled="true"
+                app:counterMaxLength="32"
+                app:errorEnabled="true"
+                app:expandedHintEnabled="false"
+                app:layout_constraintStart_toStartOf="@id/plantImageView"
+                app:layout_constraintTop_toBottomOf="@id/plantImageView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/plantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:gravity="center_vertical"
+                    android:hint="@string/plant_name_hint"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/plantLastDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/last_watering"
+                app:expandedHintEnabled="false"
+                app:layout_constraintStart_toStartOf="@id/plantImageView"
+                app:layout_constraintTop_toBottomOf="@id/plantTitleLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/plantLastDate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_watering_hint"
+                    android:inputType="date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/plantNextDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/next_watering"
+                app:expandedHintEnabled="false"
+                app:layout_constraintStart_toStartOf="@id/plantImageView"
+                app:layout_constraintTop_toBottomOf="@id/plantLastDateLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/plantNextDate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/next_watering_hint"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/description"
+                app:expandedHintEnabled="false"
+                app:layout_constraintStart_toStartOf="@id/plantImageView"
+                app:layout_constraintTop_toBottomOf="@id/plantNextDateLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descEditText"
+                    android:hint="@string/description_hint"
+                    android:imeOptions="actionDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/eatEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="@string/complementary_food"
+                android:paddingBottom="70dp"
+                app:expandedHintEnabled="false"
+                app:layout_constraintStart_toStartOf="@id/plantImageView"
+                app:layout_constraintTop_toBottomOf="@id/descEditTextLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eatEditText"
+                    android:layout_width="match_parent"
+                    android:hint="@string/complementary_food_hint"
+                    android:imeOptions="actionDone"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:text="@string/save_my_plant" />
+
+</FrameLayout>
+</ScrollView>

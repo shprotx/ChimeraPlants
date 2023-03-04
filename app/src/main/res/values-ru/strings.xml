@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChimeraPlants</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="plant_name">Название растения</string>
+    <string name="plant_name_hint">Например, кактус в зале</string>
+    <string name="last_watering">Последний полив</string>
+    <string name="next_watering">Следующий полив</string>
+    <string name="description">Описание</string>
+    <string name="description_hint">Описание, условия выращивания</string>
+    <string name="complementary_food">Подкормки</string>
+    <string name="complementary_food_hint">Информация о подкормках</string>
+    <string name="save_my_plant">Сохранить растение</string>
+    <string name="edit">"Редактировать: "</string>
+    <string name="editable_text">Редактируемый текст</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="save_button">Сохранить</string>
+    <string name="error_name">Введите название</string>
+    <string name="error_length">Название слишком длинное</string>
+    <string name="choose_picture">Выбор фото</string>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ChimeraPlants</string>
+    <string name="add_photo">Add a photo</string>
+    <string name="plant_name">Plant name</string>
+    <string name="plant_name_hint">For example,cactus in the hall</string>
+    <string name="last_watering">Last watering</string>
+    <string name="last_watering_hint" translatable="false">08.01.2023</string>
+    <string name="next_watering">Next watering</string>
+    <string name="next_watering_hint" translatable="false">12.01.2023</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Description, features of care</string>
+    <string name="complementary_food">Complementary food</string>
+    <string name="complementary_food_hint">Any information about complementary food</string>
+    <string name="save_my_plant">Save my plant</string>
+    <string name="edit">Edit:</string>
+    <string name="editable_text">Editable text</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="save_button">Save</string>
+    <string name="error_name">Please input plant name</string>
+    <string name="error_length">Name is too long</string>
+    <string name="choose_picture">Select a picture</string>
+</resources>
